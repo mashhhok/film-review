@@ -1,0 +1,243 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Helvetica, sans-serif;
+	margin: 0;
+	background-color: wheat;
+}
+
+a {
+	color: #000;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	margin: 2% 2%;
+	background-color: #f8f8f8;
+	border-radius: 20px;
+	height: 85vh;
+}
+
+
+/* header */
+
+.header {
+	background-color: #fff;
+	width: 100%;
+}
+
+.header ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+	background-color: #fff;
+}
+  
+.header li a {
+	display: block;
+	padding: 20px 20px;
+	border-right: 1px solid #f4f4f4;
+	text-decoration: none;
+}
+  
+.header li a:hover,
+.header .menu-btn:hover {
+	background-color: #f4f4f4;
+}
+  
+.header .logo {
+	display: block;
+	float: left;
+	font-size: 2em;
+	padding: 10px 20px;
+	text-decoration: none;
+}
+  
+  /* menu */
+  
+.header .menu {
+	clear: both;
+	max-height: 0;
+	transition: max-height .2s ease-out;
+}
+  
+  /* menu icon */
+  
+.header .menu-icon {
+	cursor: pointer;
+	display: inline-block;
+	float: right;
+	position: relative;
+	user-select: none;
+}
+  
+.header .menu-icon .navicon {
+	background: #333;
+	display: block;
+	height: 2px;
+	position: relative;
+	transition: background .2s ease-out;
+	width: 18px;
+}
+  
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+	background: #333;
+	content: '';
+	display: block;
+	height: 100%;
+	position: absolute;
+	transition: all .2s ease-out;
+	width: 100%;
+}
+  
+.header .menu-icon .navicon:before {
+	top: 5px;
+}
+  
+.header .menu-icon .navicon:after {
+	top: -5px;
+}
+  
+  /* menu btn */
+  
+.header .menu-btn {
+	display: none;
+}
+  
+.header .menu-btn:checked ~ .menu {
+	max-height: 240px;
+}
+  
+.header .menu-btn:checked ~ .menu-icon .navicon {
+	background: transparent;
+}
+  
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+	transform: rotate(-45deg);
+}
+  
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+	transform: rotate(45deg);
+}
+  
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+	top: 0;
+}
+  
+/* 48em = 768px */
+  
+@media (min-width: 48em) {
+	.header li {
+	  float: left;
+	}
+	.header li a {
+	  padding: 20px 30px;
+	}
+	.header .menu {
+	  clear: none;
+	  float: right;
+	  max-height: none;
+	}
+	.header .menu-icon {
+	  display: none;
+	}
+}
+
+.film-about-main{
+	display: flex;
+	flex-direction: row;
+}
+
+.film-name {
+	margin: 4% 0 2% 0;
+	display: flex;
+	justify-content: center;
+	align-items:flex-start;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li{
+	margin: 14px 0;
+}
+
+.film-about-short {
+	display: flex;
+	align-items:flex-start;
+	padding: 10px;
+	font-size: 21px;
+}
+
+.film-about-short-li{
+	padding: 0 0 0 12px;
+}
+
+.film-cover {
+	width: 200px;
+}
+
+.header-name{
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.film-rate{
+	margin: 0 0 0 10%;
+}
+
+@keyframes growProgressBar {
+	0%, 33% { --pgPercentage: 0; }
+	100% { --pgPercentage: var(--value); }
+}
+  
+@property --pgPercentage {
+	syntax: '<number>';
+	inherits: false;
+	initial-value: 0;
+}
+  
+div[role="progressbar"] {
+	margin: 20% 50% 0 0;
+	--size: 12rem;
+	--fg: #ffae00;
+	--bg: #fff7e775;
+	--pgPercentage: var(--value);
+	animation: growProgressBar 3s 1 forwards;
+	width: var(--size);
+	height: var(--size);
+	border-radius: 50%;
+	display: grid;
+	place-items: center;
+	background: 
+	  radial-gradient(closest-side, white 80%, transparent 0 99.9%, white 0),
+	  conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0)
+	  ;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: calc(var(--size) / 5);
+	color: var(--fg);
+}
+  
+div[role="progressbar"]::before {
+	counter-reset: percentage var(--value);
+	content: counter(percentage) '%';
+}
+  
+.film-about-long {
+	display: flex;
+	flex-direction: row;
+	text-align: justify;	
+	text-justify: inter-word;
+	padding: 10px;
+	font-size: 21px;
+}
