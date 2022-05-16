@@ -1,0 +1,108 @@
+/*This is main css file where I adeed all general settings for all pages*/
+* {
+    margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+	font-family: Helvetica, sans-serif;
+	margin: 0;
+	background-color: gray;
+}
+
+a {
+	color: #000;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	margin: 2% 2%;
+	background-color: #f8f8f8;
+	border-radius: 20px;
+}
+
+/* this part create our header (class = 'banner') prettier */
+.banner {
+	background-color: #fff;
+	box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+	position: fixed;
+	width: 96%;
+	z-index: 3;
+	top: 0;
+	margin: 0 2%;
+	border-radius: 5px;
+	left: 0;
+}
+
+.banner ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+	background-color: #fff;
+}
+  
+.banner li a {
+	display: block;
+	padding: 20px 20px;
+	border-right: 1px solid #f4f4f4;
+	text-decoration: none;
+}
+  
+.banner li a:hover,
+.banner .menu-btn:hover {
+	background-color: #f4f4f4;
+}
+  
+.banner .logo {
+	display: block;
+	float: left;
+	font-size: 2em;
+	padding: 10px 20px;
+	text-decoration: none;
+}
+
+/* Below I wrote some settings for menu */  
+.banner .menu {
+	clear: both;
+	max-height: 0;
+	transition: max-height .2s ease-out;
+}
+
+/* menu icon */ 
+.banner .menu-icon {
+	cursor: pointer;
+	display: inline-block;
+	padding: 28px 20px;
+	position: relative;
+	user-select: none;
+}
+  
+.banner .menu-icon .navicon {
+	background: #333;
+	display: block;
+	height: 2px;
+	position: relative;
+	transition: background .2s ease-out;
+	width: 18px;
+}
+  
+/* 48em = 768px */
+@media (min-width: 48em) {
+	.banner li {
+	  float: left;
+	}
+	.banner li a {
+	  padding: 20px 30px;
+	}
+	.banner .menu {
+	  clear: none;
+	  float: right;
+	  max-height: none;
+	}
+	.banner .menu-icon {
+	  display: none;
+	}
+}

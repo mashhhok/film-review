@@ -1,121 +1,12 @@
-* {
-	margin: 0;
-	padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-	font-family: Helvetica, sans-serif;
-	margin: 0;
-	background-color: gray;
-}
-
-a {
-	color: #000;
-}
-
 .container {
-	display: flex;
-	flex-direction: column;
-	margin: 2% 2%;
-	background-color: #f8f8f8;
-	padding: 2% 4%;
-	border-radius: 20px;
+  padding: 2% 4%;
 }
 
-/* header */
-
-.header {
-	background-color: #fff;
-	box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
-	position: fixed;
-	width: 96%;
-	z-index: 3;
-	top: 0;
-	margin: 0 2%;
-	border-radius: 5px;
-	left: 0;
-}
-
-.header ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	overflow: hidden;
-	background-color: #fff;
-}
-  
-.header li a {
-	display: block;
-	padding: 20px 20px;
-	border-right: 1px solid #f4f4f4;
-	text-decoration: none;
-}
-  
-.header li a:hover,
-.header .menu-btn:hover {
-	background-color: #f4f4f4;
-}
-  
-.header .logo {
-	display: block;
-	float: left;
-	font-size: 2em;
-	padding: 10px 20px;
-	text-decoration: none;
-}
-
-
-/* menu */  
-.header .menu {
-	clear: both;
-	max-height: 0;
-	transition: max-height .2s ease-out;
-}
-
-/* menu icon */ 
-.header .menu-icon {
-	cursor: pointer;
-	display: inline-block;
-	float: right;
-	padding: 28px 20px;
-	position: relative;
-	user-select: none;
-}
-  
-.header .menu-icon .navicon {
-	background: #333;
-	display: block;
-	height: 2px;
-	position: relative;
-	transition: background .2s ease-out;
-	width: 18px;
-}
-  
-
-  
-/* 48em = 768px */
-@media (min-width: 48em) {
-	.header li {
-	  float: left;
-	}
-	.header li a {
-	  padding: 20px 30px;
-	}
-	.header .menu {
-	  clear: none;
-	  float: right;
-	  max-height: none;
-	}
-	.header .menu-icon {
-	  display: none;
-	}
-}
-
-p {
+.new-paragraph {
 	margin: 5% 0;
 }
-h2 {
+
+.heading-2 {
 	margin: 5% 0;
 }
 
@@ -124,13 +15,16 @@ h2 {
 	font-size: 25px;
 	margin: 1% 0;
 }
+
 .column {
 	margin: 2%;
 	padding: 2%;
 }
+
 .main {
 	width: 75%;
 }
+
 .side {
 	width: 25%;
 	text-align: center;
@@ -263,7 +157,7 @@ h2 {
   }
 }
 
-
+/* Make wrapper for instagram and GitHub icons */
 .wrapper {
   display: inline-flex;
   list-style: none;
@@ -272,6 +166,7 @@ h2 {
   justify-content: center;
 }
 
+/* Make instagram and GitHub icons (icon's settings)*/
 .wrapper .icon {
   position: relative;
   background: #ffffff;
@@ -290,6 +185,7 @@ h2 {
   transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
+/* Make instagram and GitHub icons (settings inside icon)*/
 .wrapper .tooltip {
   position: absolute;
   top: 0;
@@ -304,6 +200,7 @@ h2 {
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
+/* Make animation for our icons*/
 .wrapper .tooltip::before {
   position: absolute;
   content: "";
@@ -328,20 +225,6 @@ h2 {
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
 }
 
-.wrapper .facebook:hover,
-.wrapper .facebook:hover .tooltip,
-.wrapper .facebook:hover .tooltip::before {
-  background: #1877F2;
-  color: #ffffff;
-}
-
-.wrapper .twitter:hover,
-.wrapper .twitter:hover .tooltip,
-.wrapper .twitter:hover .tooltip::before {
-  background: #1DA1F2;
-  color: #ffffff;
-}
-
 .wrapper .instagram:hover,
 .wrapper .instagram:hover .tooltip,
 .wrapper .instagram:hover .tooltip::before {
@@ -353,12 +236,5 @@ h2 {
 .wrapper .github:hover .tooltip,
 .wrapper .github:hover .tooltip::before {
   background: #333333;
-  color: #ffffff;
-}
-
-.wrapper .youtube:hover,
-.wrapper .youtube:hover .tooltip,
-.wrapper .youtube:hover .tooltip::before {
-  background: #CD201F;
   color: #ffffff;
 }

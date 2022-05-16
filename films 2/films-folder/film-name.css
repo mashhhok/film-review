@@ -2,44 +2,12 @@
 	padding: 2% 4%;
 }
 
-.heading-1 {
-	font-size: 40px;
-	text-align: center;
-	margin: 3% 0;
-}
-
-.actor_listing {
-	display: flex;
-	font-size: 25px;
-	background-color: #eee;
-	transition: 0.5s;
-	margin: 1% 0;
-}
-
-.actor_list .column {
-	margin: 20px;
-}
-
-.image {
-	margin: auto;
-}
-
-.actor_name {
-	color: #333;
-	font-size: 50px;
-}
-
-.actor_listing:hover {
-	background-color: #ddd;
-	transition: 1s;
-}
-
-.actor-about-main{
+.film-about-main{
 	display: flex;
 	flex-direction: row;
 }
 
-.actor-name {
+.film-name {
 	margin: 4% 0 2% 0;
 	display: flex;
 	justify-content: center;
@@ -53,18 +21,18 @@ ul {
 }
 
 
-.actor-about-short {
+.film-about-short {
 	display: flex;
 	align-items:flex-start;
 	padding: 10px;
-	font-size: 30px;
+	font-size: 21px;
 }
 
-.actor-about-short-li{
+.film-about-short-li{
 	padding: 0 0 0 12px;
 }
 
-.actor-cover {
+.film-cover {
 	width: 200px;
 }
 
@@ -75,7 +43,7 @@ ul {
 	text-align: center;
 }
 
-.actor-rate{
+.film-rate{
 	margin: 0 0 0 10%;
 }
 .description_column{
@@ -97,7 +65,7 @@ ul {
 div[role="progressbar"] {
 	margin: 20% 50% 0 0;
 	--size: 12rem;
-	--fg: green;
+	--fg: #ffae00;
 	--bg: #fff7e775;
 	--pgPercentage: var(--value);
 	animation: growProgressBar 3s 1 forwards;
@@ -120,8 +88,7 @@ div[role="progressbar"]::before {
 	content: counter(percentage) '%';
 }
   
-.actor-trailer {
+.film-trailer {
 	text-align: center;
 	margin: auto;
 }
-
