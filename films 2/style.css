@@ -45,3 +45,8 @@
 	padding: 5vh 1vw;
 	text-align: center;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+#txt {
+	display: flex;
+  }
