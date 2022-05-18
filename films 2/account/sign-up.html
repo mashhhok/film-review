@@ -22,21 +22,13 @@
    <body>
       <div class="container">
          <main class="signup-container">
-           <h1 class="heading-primary">Log in<span class="span-blue">.</span></h1>
-           <p class="text-mute">Enter your credentials to access your account :D</p>
-           <div class="login-wrapper">
-             <a href="#" class="btn btn-google">
-               <img src="../pics/google-logo.svg">
-               Log In with Google
-             </a>
-             <div class="line-breaker">
-               <span class="line"></span>
-               <span>or</span>
-               <span class="line"></span>
-             </div>
-           </div>
-       
+           <h1 class="heading-primary">Let's create account<span class="span-blue">.</span></h1>
+           <p class="text-mute">Enter some information :D</p>
            <form class="signup-form">
+            <label class="inp">
+              <input type="name" class="input-text" placeholder="&nbsp;">
+              <span class="label">Name</span>
+            </label>
              <label class="inp">
                <input type="email" class="input-text" placeholder="&nbsp;">
                <span class="label">Email</span>
@@ -47,9 +39,14 @@
                <span class="label">Password</span>
                <span class="input-icon input-icon-password" data-password><i class="fa-solid fa-eye"></i></span>
              </label>
-             <button class="btn btn-login">Login</button>
+             <label class="inp">
+              <input type="password" class="input-text" placeholder="&nbsp;" id="password">
+              <span class="label">Re-enter password</span>
+              <span class="input-icon input-icon-password" data-password><i class="fa-solid fa-eye"></i></span>
+            </label>
+             <button class="btn btn-login">Sign up</button>
            </form>
-           <p class="text-mute">Not a member? <a href="sign-up.html">Sign up</a></p>
+           <p class="text-mute">Already have an account? <a href="account.html">Log in</a></p>
          </main>
          <div class="welcome-container">
            <h1 class="heading-secondary">Welcome to <span class="lg">Mari4ka's rate  &#127775;</span></h1>

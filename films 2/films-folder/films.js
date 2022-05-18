@@ -20,12 +20,10 @@ const lowToHigh = document.getElementById('lth-number');
 const cardList = document.getElementById('list');
 
 
-
 function createList() {
 	cardList.innerHTML = '';
 for (let i =0; i<films.length; i++){
 	
-
 const card = document.createElement('div');
 card.classList.add("card_1");
 
