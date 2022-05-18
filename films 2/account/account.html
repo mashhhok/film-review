@@ -2,27 +2,59 @@
 <html lang="en">
    <head>
 		<title>Mari4ka's rate</title>
-		<script></script>
+		<script src="account.js"></script>
 		<meta name="viewport" content="width=device-width,initial-scale=1">
-		<link rel="stylesheet" href="style.css">
-		<link rel="stylesheet" href="global.css">
-		<link rel="stylesheet" href="films-folder/style-films.css">
+		<link rel="stylesheet" href="../style.css">
+		<link rel="stylesheet" href="../global.css">
+      <link rel="stylesheet" href="account.css">
    </head>
    <header class="banner">
-      <a href="index.html" class="logo">Mari4ka's rate</a>
+      <a href="../index.html" class="logo">Mari4ka's rate</a>
       <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
       <ul class="menu">
-        <li><a href="films-folder/films.html">Films</a></li>
-        <li><a href="tv-shows/tv-shows.html">TV Shows</a></li>
-        <li><a href="actors/actors.html">Actors</a></li>
-        <li><a href="about/about.html">About us</a></li>
-		<li><a href="account/account.html">Log in</a></li>
+        <li><a href="../films-folder/films.html">Films</a></li>
+        <li><a href="../tv-shows/tv-shows.html">TV Shows</a></li>
+        <li><a href="../actors/actors.html">Actors</a></li>
+        <li><a href="../about/about.html">About us</a></li>
+		<li><a href="../account/account.html">Log in</a></li>
       </ul>
     </header>
    <body>
-	<div class="container">
-	
-	</div>
+      <div class="container">
+         <main class="signup-container">
+           <h1 class="heading-primary">Log in<span class="span-blue">.</span></h1>
+           <p class="text-mute">Enter your credentials to access your account :D</p>
+           <div class="login-wrapper">
+             <a href="#" class="btn btn-google">
+               <img src="../pics/google-logo.svg">
+               Log In with Google
+             </a>
+             <div class="line-breaker">
+               <span class="line"></span>
+               <span>or</span>
+               <span class="line"></span>
+             </div>
+           </div>
+       
+           <form class="signup-form">
+             <label class="inp">
+               <input type="email" class="input-text" placeholder="&nbsp;">
+               <span class="label">Email</span>
+               <span class="input-icon"><i class="fa-solid fa-envelope"></i></span>
+             </label>
+             <label class="inp">
+               <input type="password" class="input-text" placeholder="&nbsp;" id="password">
+               <span class="label">Password</span>
+               <span class="input-icon input-icon-password" data-password><i class="fa-solid fa-eye"></i></span>
+             </label>
+             <button class="btn btn-login">Login</button>
+           </form>
+           <p class="text-mute">Not a member? <a href="$">Sign up</a></p>
+         </main>
+         <div class="welcome-container">
+           <h1 class="heading-secondary">Welcome to <span class="lg">Mari4ka's rate  &#127775;</span></h1>
+         </div>
+       </div>
    </body>
    <footer>
 
