@@ -1,0 +1,37 @@
+[  
+    { 
+        "id": 1,
+        "name": "Interstellar",
+        "rating": 86, 
+        "Description": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival. <br><br> Starring <br><br>Matthew McConaughey <br> Anne Hathaway <br> Jessica Chastain<br>", 
+        "Link": "<a href='interstellar.html'>Read More</a>", 
+        "Picture": "../pics/pics-films/interstellar-cover.jpg"
+    },
+
+    {
+        "id": 2,
+        "name": "Doctor Strange",
+        "rating": 90, 
+        "Description": "While on a journey of physical and spiritual healing, a brilliant neurosurgeon is drawn into the world of the mystic arts.<br><br>Starring <br> <br>Benedict Cumberbatch <br> Chiwetel Ejiofor <br> Rachel McAdams<br>", 
+        "Link": "<a href='doctor_strange.html'>Read More</a>", 
+        "Picture": "../pics/pics-films/doctor_strange.jpg"
+    },
+    
+    {
+        "id": 3,
+        "name": "The Truman show",
+        "rating": 82, 
+        "Description": "An insurance salesman discovers his whole life is actually a reality TV show.<br><br>Starring <br><br>Jim Carrey <br> Ed Harris <br> Laura Linney<br>", 
+        "Link": "<a href='the_truman_show.html'>Read More</a>", 
+        "Picture": "../pics/pics-films/the_truman_show.jpg"
+    },
+
+    {
+        "id": 4,
+        "name": "Schindler's list",
+        "rating": 92, 
+        "Description": "In German-occupied Poland during World War II, industrialist Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis. <br><br>Starring <br><br>Liam Neeson <br> Ralph Fiennes <br> Ben Kingsley<br>", 
+        "Link": "<a href='schindlers_list.html'>Read More</a>", 
+        "Picture": "../pics/pics-films/schindlers_list.jpeg"
+  }
+]

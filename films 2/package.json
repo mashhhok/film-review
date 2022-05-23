@@ -8,6 +8,7 @@
     "pre-commit": "^1.2.2"
   },
   "scripts": {
-    "eslint": "eslint *.js"
-  }
+    "eslint": "eslint style.js"
+  },
+  "pre-commit": "eslint"
 }
