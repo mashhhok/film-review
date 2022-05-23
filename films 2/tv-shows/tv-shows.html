@@ -3,35 +3,12 @@
    <head>
 		<title>Mari4ka's rate</title>
 		<script src="tv-shows.js"></script>
-      <script>
-         const container = document.querySelector('#pop_corn_container')
-var animation_length = 5 //speed kernals fall
-
-function createPopcorn() {
-  var p = document.createElement('div')
-  p.className = 'dot'
-  // pick random size between 25-60
-  var scale = (Math.random()*35) + 25 
-  p.style.width = scale + 'px'
-  p.style.height = scale + 'px'
-  p.style.left = Math.random()*(window.innerWidth - 35) + 'px'
-  p.style.top = Math.random()*(window.innerHeight*.5) + 'px'
-  p.style.animation = 'pop '+animation_length+'s linear forwards'
-  container.appendChild(p)
-
-  //remove excess kernals
-  setTimeout(function(){
-    var pop = document.querySelector('.dot')
-    pop.remove()
-  },1000*animation_length)
-
-  //create kernal every second
-  setTimeout(createPopcorn, 1000)
-}
-      </script>
+      <script></script>
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<link rel="stylesheet" href="style-tv-shows.css">
-      <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" href="../../css/style.css.map">
+    <link rel="stylesheet" href="../../css/style.css">
    </head>
    <header class="banner">
       <a href="../index.html" class="logo">Mari4ka's rate</a>
@@ -47,10 +24,13 @@ function createPopcorn() {
 
    <body>
       <div class="container">
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/F4e6YQFrt1s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
-         </iframe>
-         
-         <div id="pop_corn_container"></div>
+        <figure class="icon-cards mt-3">
+          <div class="icon-cards__content">
+            <div class="icon-cards__item d-flex align-items-center justify-content-center"><span class="h1"></span></div>
+            <div class="icon-cards__item d-flex align-items-center justify-content-center"><span class="h1"></span></div>
+            <div class="icon-cards__item d-flex align-items-center justify-content-center"><span class="h1"></span></div>
+          </div>
+        </figure>
          <h1 class="title">We are so sorry...</h1>
          <h1 class="title">Page is still in development &#129299;</h1>
       </div>
